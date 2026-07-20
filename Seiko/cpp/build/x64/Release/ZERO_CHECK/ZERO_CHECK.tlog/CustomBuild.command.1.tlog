@@ -1,0 +1,10 @@
+^C:\USERS\BORA\DESKTOP\PEWA\CPP\BUILD\CMAKEFILES\037E355CA22F78E90994312F574C8386\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Bora/Desktop/Pewa/cpp -BC:/Users/Bora/Desktop/Pewa/cpp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Bora/Desktop/Pewa/cpp/build/Pewa.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

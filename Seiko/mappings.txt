@@ -1,0 +1,1029 @@
+adaptive!!
+
+Entity {
+  class: craftrise.Ҏ
+
+  fields: {
+    motionZ      -> type: craftrise.O         , obf: Β, offset: 340
+    motionY      -> type: craftrise.O         , obf: Ѩ, offset: 288
+    motionX      -> type: craftrise.O         , obf: ŝ, offset: 324
+    fallDistance -> type: float               , obf: ӥ, offset: 240
+    height       -> type: float               , obf: Ҭ, offset: 204
+    rotationPitch -> type: float               , obf: Ʈ, offset: 124
+    rotationYaw  -> type: float               , obf: ʒ, offset: 248
+    onGround     -> type: craftrise.Ž         , obf: Ϙ, offset: 284
+    posY         -> type: double              , obf: Ї, offset: 56
+    posZ         -> type: double              , obf: ր, offset: 72
+    width        -> type: float               , obf: ǖ, offset: 136
+    posX         -> type: double              , obf: ӯ, offset: 104
+    boundingBox  -> type: craftrise.Uϥ        , obf: Ź, offset: 380
+    lastTickPosX -> type: double              , obf: Ի, offset: 24
+    lastTickPosY -> type: double              , obf: Є, offset: 48
+    lastTickPosZ -> type: double              , obf: Ƀ, offset: 32
+    isInWeb      -> type: boolean             , obf: ɩ, offset: 258
+    prevPosZ     -> type: double              , obf: Ϫ, offset: 64
+    prevPosY     -> type: double              , obf: í, offset: 80
+    prevPosX     -> type: double              , obf: Ժ, offset: 40
+    dataWatcher  -> type: craftrise.օ         , obf: Ό, offset: 308
+    worldObj     -> type: craftrise.Ž         , obf: Ϙ, offset: 284
+    entityId     -> type: int                 , obf: ԋ, offset: 176
+    ticksExisted -> type: int                 , obf: û, offset: 112
+  }
+
+  methods: {
+    getFlag(int)                   -> returns: boolean        , obf: ʶ
+    setPositionAndUpdate(double, double, double) -> returns: void           , obf: ϴ
+    isEntityInsideOpaqueBlock()    -> returns: boolean        , obf: Ȼ
+    setPositionAndRotation(double, double, double, float, float) -> returns: void           , obf: ȥ
+    getEyeHeight()                 -> returns: float          , obf: Ԗ
+    getUniqueID()                  -> returns: java.util.UUID , obf: í
+    getDistanceToEntity(Ҏ)         -> returns: float          , obf: ӏ
+    setFlag(int, boolean)          -> returns: void           , obf: Ǭ
+    rayTrace(double, float)        -> returns: craftrise.ˢ    , obf: ŏ
+  }
+}
+
+ClientUtils {
+  class: crsecond.ȤӺ
+
+  fields: {
+    antiCheatField -> type: java.lang.Runnable  , obf: Ȗ, offset: 276
+    Ō            -> type: craftrise.Օ         , obf: Ō, offset: 188
+    scoreBoard   -> type: crsecond.Ż          , obf: ɛ, offset: 236
+  }
+
+}
+
+PotionEffect {
+  class: craftrise.Ъl
+
+}
+
+EnumPacketDirection {
+  class: crsecond.Ƀ
+
+}
+
+C08PacketPlayerBlockPlacement {
+  class: craftrise.Ъò
+
+}
+
+EnumAxis {
+  class: craftrise.ЪǊ$ϰ
+
+}
+
+Render {
+  class: craftrise.ЪƧ
+
+}
+
+NBTTagCompound {
+  class: craftrise.Uԍ
+
+  methods: {
+    getInteger(String)             -> returns: int            , obf: й
+    getString(String)              -> returns: java.lang.String, obf: Έ
+    getCompoundTag(String)         -> returns: craftrise.Uԍ   , obf: ɧ
+    hasKey(String)                 -> returns: boolean        , obf: ͱ
+  }
+}
+
+DynamicTexture {
+  class: craftrise.Uչ
+
+}
+
+INetHandlerPlayClient {
+  class: craftrise.Ъҋ
+
+}
+
+TileEntityRendererDispatcher {
+  class: craftrise.ЪÓ
+
+  fields: {
+    instance     -> type: craftrise.ЪÓ        , obf: instance, offset: 104
+  }
+
+  methods: {
+    cacheActiveRenderInfo(Ž, UǼ, Ƞ, Ҏ, float) -> returns: void           , obf: cacheActiveRenderInfo
+    renderTileEntity(Ъn, float, int) -> returns: void           , obf: renderTileEntity
+  }
+}
+
+RenderItem {
+  class: craftrise.UЩ
+
+  methods: {
+    renderModel(US, int)           -> returns: void           , obf: ļ
+    renderItemAndEffectIntoGUI(Uӡ, int, int) -> returns: void           , obf: Ķ
+    renderItemOverlayIntoGUI(Ƞ, Uӡ, int, int, String) -> returns: void           , obf: Ӛ
+  }
+}
+
+Item {
+  class: craftrise.ЪҠ
+
+}
+
+Profiler {
+  class: craftrise.Uɝ
+
+}
+
+ModelRenderer {
+  class: crsecond.ɫ
+
+  fields: {
+    childModels  -> type: java.util.List      , obf: childModels, offset: 128
+    rotationPointY -> type: float               , obf: rotationPointY, offset: 16
+    rotationPointX -> type: float               , obf: rotationPointX, offset: 48
+    rotationPointZ -> type: float               , obf: rotationPointZ, offset: 88
+    showModel    -> type: boolean             , obf: showModel, offset: 110
+    rotateAngleZ -> type: float               , obf: rotateAngleZ, offset: 92
+    rotateAngleX -> type: float               , obf: rotateAngleX, offset: 76
+    rotateAngleY -> type: float               , obf: rotateAngleY, offset: 12
+  }
+
+  methods: {
+    float3Method_2(float, float, float) -> returns: void           , obf: ƞ
+    float3Method_1(float, float, float) -> returns: void           , obf: ˤ
+    addChild(ɫ)                    -> returns: void           , obf: ȷ
+    setTextureOffset(int, int)     -> returns: crsecond.ɫ     , obf: Ė
+    addBox(...)                    -> returns: crsecond.ɫ     , obf: Ӌ
+    float1Method_1(float)          -> returns: void           , obf: ǫ
+    float1Method_2(float)          -> returns: void           , obf: ӊ
+    float1Method_3(float)          -> returns: void           , obf: Ɨ
+    float1Method_4(float)          -> returns: void           , obf: ȱ
+  }
+}
+
+Vec3 {
+  class: craftrise.Г
+
+}
+
+C02PacketUseEntity {
+  class: craftrise.UÂ
+
+  methods: {
+    getEntity(Ž)                   -> returns: craftrise.Ҏ    , obf: f
+  }
+}
+
+IChatComponent {
+  class: crsecond.Ҋ
+
+}
+
+WorldInfo {
+  class: craftrise.Uӏ
+
+}
+
+Gui {
+  class: craftrise.Ã
+
+  methods: {
+    drawModalRectWithCustomSizedTexture(...) -> returns: void           , obf: ň
+    drawRect(int, int, int, int, int) -> returns: void           , obf: ɯ
+    drawScaledCustomSizeModalRect(...) -> returns: void           , obf: ȗ
+  }
+}
+
+GuiChest {
+  class: craftrise.Ҟ
+
+}
+
+IBlockState {
+  class: craftrise.ЪѼ
+
+  methods: {
+    getBlock()                     -> returns: craftrise.Ǳ    , obf: Ԛ
+  }
+}
+
+EntityList {
+  class: craftrise.Ъպ
+
+  methods: {
+    addMapping(Class, String, int) -> returns: void           , obf: ѳ
+    addMapping1(Class, String, int, int, int) -> returns: void           , obf: ӯ
+  }
+}
+
+AbstractClientPlayer {
+  class: craftrise.É
+
+  fields: {
+    playerInfo   -> type: craftrise.Uӹ        , obf: ɓ, offset: 932
+  }
+
+}
+
+GlStateManager {
+  class: craftrise.ЪȦ
+
+}
+
+PlayerControllerMP {
+  class: craftrise.Ъƙ
+
+  methods: {
+    syncCurrentPlayItem()          -> returns: void           , obf: Ȟ
+    windowClick(int, int, int, int, Ԟ) -> returns: craftrise.Uӡ   , obf: ɜ
+  }
+}
+
+MovingObjectPosition {
+  class: craftrise.ˢ
+
+  fields: {
+    entityHit    -> type: craftrise.Ҏ         , obf: ɉ, offset: 56
+    typeOfHit    -> type: craftrise.ˢ$ϊ       , obf: O, offset: 60
+    hitVec       -> type: craftrise.Г         , obf: æ, offset: 64
+  }
+
+  methods: {
+    getBlockPos()                  -> returns: crsecond.Ȥƒ    , obf: ӟ
+  }
+}
+
+GameProfile {
+  class: crsecond.P
+
+  fields: {
+    name         -> type: java.lang.String    , obf: ˠ, offset: 36
+    uuid         -> type: java.util.UUID      , obf: ȓ, offset: 32
+  }
+
+  methods: {
+    getUUID()                      -> returns: java.util.UUID , obf: ń
+    getName()                      -> returns: java.lang.String, obf: Ť
+  }
+}
+
+NetHandlerPlayClient {
+  class: craftrise.ЪЧ
+
+  fields: {
+    networkManager -> type: crsecond.Ȥϣ         , obf: ǌ, offset: 76
+  }
+
+  methods: {
+    sendPacket(ȅ)                  -> returns: void           , obf: ǹ
+  }
+}
+
+BooleanContainer {
+  class: craftrise.Ž
+
+  methods: {
+    getValue()                     -> returns: boolean        , obf: Ȥ
+  }
+}
+
+EntityPlayer {
+  class: craftrise.Ԟ
+
+  fields: {
+    inventoryContainer -> type: craftrise.Uέ        , obf: ƹ, offset: 832
+    openContainer -> type: craftrise.Uέ        , obf: ʳ, offset: 856
+    inventory    -> type: craftrise.Ъҭ        , obf: ǩ, offset: 872
+    gameProfile  -> type: crsecond.P          , obf: Ы, offset: 848
+    fishEntity   -> type: craftrise.Թ         , obf: ħ, offset: 844
+  }
+
+  methods: {
+    getHeldItem()                  -> returns: craftrise.Uӡ   , obf: ǩ
+    setItemInUse(Uӡ, int)          -> returns: void           , obf: E
+    isSneaking()                   -> returns: boolean        , obf: F
+  }
+}
+
+Slot {
+  class: craftrise.Uơ
+
+  fields: {
+    inventorySlots -> type: java.util.List      , obf: ն, offset: 72
+  }
+
+  methods: {
+    getStack()                     -> returns: craftrise.Uӡ   , obf: ԉ
+  }
+}
+
+C03PacketPlayer {
+  class: craftrise.Ъʫ
+
+  fields: {
+    yaw          -> type: float               , obf: Ł, offset: 76
+    pitch        -> type: float               , obf: Ⱦ, offset: 12
+    onGround     -> type: boolean             , obf: p, offset: 80
+    x            -> type: double              , obf: ʑ, offset: 32
+    y            -> type: double              , obf: Ģ, offset: 16
+    z            -> type: double              , obf: Ų, offset: 24
+  }
+
+}
+
+NetworkManager {
+  class: crsecond.Ȥϣ
+
+  fields: {
+    channel      -> type: io.netty.channel.Channel, obf: Ũ, offset: 68
+  }
+
+}
+
+ItemStack {
+  class: craftrise.Uӡ
+
+  fields: {
+    stackSize    -> type: int                 , obf: դ, offset: 16
+    item         -> type: craftrise.ЪҠ        , obf: č, offset: 116
+  }
+
+  methods: {
+    getSubCompound(String, boolean) -> returns: craftrise.Uԍ   , obf: ʘ
+    setTagInfo(String, UĴ)         -> returns: void           , obf: ġ
+  }
+}
+
+EnumFacing {
+  class: craftrise.ЪǊ
+
+}
+
+ICamera {
+  class: craftrise.ЪƩ
+
+}
+
+TileEntity {
+  class: craftrise.Ъn
+
+}
+
+ResourceLocation {
+  class: crsecond.җ
+
+}
+
+EffectRenderer {
+  class: craftrise.ʬ
+
+}
+
+RenderPlayer {
+  class: craftrise.ЪȒ
+
+  methods: {
+    doRender(É, double, double, double, float, float) -> returns: void           , obf: Ę
+    getMainModel()                 -> returns: crsecond.Ȃ     , obf: Z
+  }
+}
+
+MotionContainer {
+  class: craftrise.O
+
+  methods: {
+    getValue()                     -> returns: double         , obf: Ù
+  }
+}
+
+RenderManager {
+  class: craftrise.Ϊ
+
+  fields: {
+    renderPosZ   -> type: double              , obf: ͽ, offset: 24
+    renderPosY   -> type: double              , obf: ˠ, offset: 56
+    renderPosX   -> type: double              , obf: И, offset: 40
+    entityRenderMap -> type: java.util.Map       , obf: ϔ, offset: 112
+  }
+
+  methods: {
+    getEntityRenderer()            -> returns: java.util.Map  , obf: Ė
+    getEntityRenderObject(Ҏ)       -> returns: craftrise.ЪƧ   , obf: Ҭ
+    shouldRender(Ҏ, ЪƩ, double, double, double) -> returns: boolean        , obf: ҵ
+    renderEntityWithPosYaw(...)    -> returns: boolean        , obf: Ð
+    renderEntityStatic(Ҏ, float, boolean) -> returns: boolean        , obf: C
+  }
+}
+
+ChatComponentStyle {
+  class: crsecond.Τ
+
+}
+
+PlayerCapabilities {
+  class: NULL (not found)
+}
+
+RenderHelper {
+  class: craftrise.Uƙ
+
+  methods: {
+    enableGUIStandardItemLighting() -> returns: void           , obf: v
+    disableStandardItemLighting()  -> returns: void           , obf: Г
+  }
+}
+
+Potion {
+  class: craftrise.Uá
+
+  fields: {
+    potionTypes  -> type: [Lcraftrise.Uá;     , obf: Ϝ, offset: 232
+  }
+
+  methods: {
+    getName()                      -> returns: java.lang.String, obf: ħ
+    hasStatusIcon()                -> returns: boolean        , obf: ă
+  }
+}
+
+Minecraft {
+  class: craftrise.կ
+
+  fields: {
+    currentScreen -> type: craftrise.ϔ         , obf: Ϟ, offset: 324
+    theMinecraft -> type: craftrise.կ         , obf: Ǯ, offset: 168
+    cps2         -> type: int                 , obf: ֆ, offset: 264
+    cps1         -> type: int                 , obf: ɕ, offset: 240
+    ingameGUI    -> type: craftrise.ԃ         , obf: Š, offset: 484
+    playerController -> type: craftrise.Ъƙ        , obf: Й, offset: 456
+    objectMouseOver -> type: craftrise.ˢ         , obf: Ƀ, offset: 536
+    effectRenderer -> type: craftrise.ʬ         , obf: τ, offset: 344
+  }
+
+  methods: {
+    getRenderItem()                -> returns: craftrise.UЩ   , obf: Ց
+    getThePlayer()                 -> returns: craftrise.Օ    , obf: թ
+    getFontRendererObj()           -> returns: craftrise.Ƞ    , obf: ˤ
+    getBlockRendererDispatcher()   -> returns: craftrise.Ƒ    , obf: í
+    getRenderManager()             -> returns: craftrise.Ϊ    , obf: Ĭ
+    getTextureManager()            -> returns: craftrise.UǼ   , obf: Ь
+  }
+}
+
+GuiInventory {
+  class: craftrise.π
+
+  methods: {
+    drawEntityOnScreen(int, int, int, float, float, Č) -> returns: void           , obf: X
+  }
+}
+
+C06PacketPlayerPosLook {
+  class: craftrise.Ъʫ$Ԙ
+
+}
+
+craftrise.Config {
+  class: crsecond.ώ
+
+  fields: {
+    renderPartialTicks -> type: float               , obf: renderPartialTicks, offset: 212
+  }
+
+}
+
+InventoryPlayer {
+  class: craftrise.Ъҭ
+
+  fields: {
+    armorInventory -> type: [Lcraftrise.Uӡ;     , obf: ź, offset: 28
+    mainInventory -> type: [Lcraftrise.Uӡ;     , obf: ƽ, offset: 32
+    currentItem  -> type: int                 , obf: Ò, offset: 16
+  }
+
+}
+
+TextureManager {
+  class: craftrise.UǼ
+
+  methods: {
+    getDynamicTextureLocation(String, Uչ) -> returns: crsecond.җ     , obf: Ŵ
+  }
+}
+
+ModelBiped {
+  class: crsecond.ӧ
+
+  fields: {
+    bipedRightLeg -> type: crsecond.ɫ          , obf: bipedRightLeg, offset: 180
+    bipedLeftLeg -> type: crsecond.ɫ          , obf: bipedLeftLeg, offset: 196
+    bipedBody    -> type: crsecond.ɫ          , obf: bipedBody, offset: 172
+    bipedHeadwear -> type: crsecond.ɫ          , obf: bipedHeadwear, offset: 192
+    bipedRightArm -> type: crsecond.ɫ          , obf: bipedRightArm, offset: 168
+    bipedLeftArm -> type: crsecond.ɫ          , obf: bipedLeftArm, offset: 176
+    bipedHead    -> type: crsecond.ɫ          , obf: bipedHead, offset: 164
+  }
+
+}
+
+EntityLivingBase {
+  class: craftrise.Č
+
+  fields: {
+    moveStrafing -> type: craftrise.Uϣ        , obf: Þ, offset: 644
+    attackedAtYaw -> type: float               , obf: ė, offset: 432
+    rotationYawHead -> type: float               , obf: ԁ, offset: 596
+    renderYawOffset -> type: float               , obf: ɰ, offset: 604
+    hurtTime     -> type: int                 , obf: Ǣ, offset: 536
+    isSwingInProgress -> type: boolean             , obf: ǔ, offset: 610
+    maxHurtTime  -> type: int                 , obf: Ⱥ, offset: 524
+    prevRenderYawOffset -> type: float               , obf: Ҥ, offset: 440
+    moveForward  -> type: craftrise.Uϣ        , obf: Љ, offset: 660
+    healthHelper -> type: float               , obf: ǿ, offset: 528
+  }
+
+  methods: {
+    getActivePotionEffects()       -> returns: java.util.Collection, obf: Ǩ
+    performHurtAnimation()         -> returns: void           , obf: ɢ
+    moveEntityWithHeading(float, float) -> returns: void           , obf: ɛ
+  }
+}
+
+C07PacketPlayerDigging.Action {
+  class: craftrise.UϺ$Ѝ
+
+}
+
+GuiContainer {
+  class: craftrise.Ӯ
+
+}
+
+C04PacketPlayerPosition {
+  class: craftrise.Ъʫ$ʐ
+
+}
+
+IBakedModel {
+  class: craftrise.US
+
+}
+
+S12PacketEntityVelocity {
+  class: craftrise.Ъɡ
+
+  fields: {
+    motionZ      -> type: craftrise.Ъʒ        , obf: Ӻ, offset: 44
+    motionX      -> type: craftrise.Ъʒ        , obf: Ϧ, offset: 52
+    motionY      -> type: craftrise.Ъʒ        , obf: ӯ, offset: 48
+  }
+
+  methods: {
+    getMotionZ()                   -> returns: double         , obf: Ʈ
+    getMotionY()                   -> returns: double         , obf: ї
+    getMotionX()                   -> returns: double         , obf: Հ
+    getEntityID()                  -> returns: int            , obf: ϣ
+  }
+}
+
+RendererLivingEntity {
+  class: craftrise.Ъľ
+
+  fields: {
+    NAME_TAG_RANGE -> type: float               , obf: р, offset: 332
+    NAME_TAG_RANGE_SNEAK -> type: float               , obf: ԋ, offset: 356
+  }
+
+}
+
+ISaveHandler {
+  class: craftrise.Ъʅ
+
+}
+
+C07PacketPlayerDigging {
+  class: craftrise.UϺ
+
+}
+
+INetHandlerPlayServer {
+  class: craftrise.Ԝ
+
+}
+
+main {
+  class: adaptive.sex.Main
+
+  fields: {
+    SAFE_RUNNABLE -> type: java.lang.Runnable  , obf: SAFERUNNABLE, offset: 120
+  }
+
+}
+
+World {
+  class: craftrise.Ž
+
+  fields: {
+    playerEntities -> type: java.util.List      , obf: ϩ, offset: 116
+    loadedTileEntityList -> type: java.util.List      , obf: Ώ, offset: 160
+  }
+
+  methods: {
+    getBlockState(Ȥƒ)              -> returns: craftrise.ЪѼ   , obf: ë
+    getChunkFromChunkCoords(int, int) -> returns: craftrise.Ͻ    , obf: ŵ
+    getTileEntity(Ȥƒ)              -> returns: craftrise.Ъn   , obf: ʃ
+  }
+}
+
+S0BPacketAnimation {
+  class: craftrise.Uќ
+
+}
+
+ScaledResolution {
+  class: craftrise.Ѷ
+
+  fields: {
+    height       -> type: int                 , obf: Ֆ, offset: 40
+    width        -> type: int                 , obf: Ϩ, offset: 56
+  }
+
+}
+
+Container {
+  class: craftrise.Uέ
+
+  fields: {
+    inventorySlots -> type: craftrise.Uέ        , obf: ƙ, offset: 256
+    windowId     -> type: int                 , obf: ȯ, offset: 64
+    dragMode     -> type: int                 , obf: Ȣ, offset: 60
+  }
+
+  methods: {
+    getSlot(int)                   -> returns: craftrise.Uơ   , obf: Į
+  }
+}
+
+BlockModelRenderer {
+  class: craftrise.Uʖ
+
+  methods: {
+    getModelForState(ЪѼ)           -> returns: craftrise.US   , obf: қ
+  }
+}
+
+NBTBase {
+  class: craftrise.UĴ
+
+}
+
+ScoreBoardUtil {
+  class: crsecond.Ż
+
+  fields: {
+    scoreBoardInfo -> type: it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap, obf: Ь, offset: 80
+  }
+
+  methods: {
+    getTitle()                     -> returns: java.lang.String, obf: Ğ
+    getScoreBoardInfo()            -> returns: it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap, obf: м
+  }
+}
+
+WorldProvider {
+  class: craftrise.UԳ
+
+}
+
+BlockPos {
+  class: crsecond.Ȥƒ
+
+}
+
+MovingObjectType {
+  class: craftrise.ˢ$ϊ
+
+}
+
+RenderBiped {
+  class: craftrise.ЪԢ
+
+  fields: {
+    modelBiped   -> type: crsecond.ӧ          , obf: Ǵ, offset: 268
+  }
+
+}
+
+ChatComponentText {
+  class: crsecond.ʨ
+
+}
+
+C0APacketAnimation {
+  class: craftrise.Ϣ
+
+}
+
+PacketBuffer {
+  class: crsecond.å
+
+  methods: {
+    writeFloat(float)              -> returns: io.netty.buffer.ByteBuf, obf: writeFloat
+    writeVarIntToBuffer(int)       -> returns: void           , obf: Ƞ
+    writeEnumValue(Enum)           -> returns: void           , obf: ń
+  }
+}
+
+Packet {
+  class: craftrise.ȅ
+
+}
+
+GuiInGame {
+  class: craftrise.ԃ
+
+  methods: {
+    renderGameOverlay(float)       -> returns: void           , obf: ʃ
+  }
+}
+
+EntityFishHook {
+  class: craftrise.Թ
+
+  fields: {
+    inGround     -> type: boolean             , obf: ќ, offset: 520
+    caughtEntity -> type: craftrise.Ҏ         , obf: Ǜ, offset: 532
+  }
+
+}
+
+EnumAxisDirection {
+  class: craftrise.ЪǊ$ȶ
+
+}
+
+Chunk {
+  class: craftrise.Ͻ
+
+  methods: {
+    getBlock(int, int, int)        -> returns: craftrise.Ǳ    , obf: ѻ
+  }
+}
+
+DataWatcher {
+  class: craftrise.օ
+
+  methods: {
+    updateObject(int, int)         -> returns: void           , obf: Ո
+    getFloat(int)                  -> returns: float          , obf: Ӣ
+    getString(int)                 -> returns: java.lang.String, obf: ʀ
+    getInt(int)                    -> returns: int            , obf: ɋ
+    getShort(int)                  -> returns: short          , obf: γ
+    getByte(int)                   -> returns: byte           , obf: Ǹ
+  }
+}
+
+ModelPlayer {
+  class: crsecond.Ȃ
+
+  fields: {
+    bipedDeadmau5Head -> type: crsecond.ɫ          , obf: bipedDeadmau5Head, offset: 252
+    bipedBodyWear -> type: crsecond.ɫ          , obf: bipedBodyWear, offset: 236
+    bipedLeftLegwear -> type: crsecond.ɫ          , obf: bipedLeftLegwear, offset: 224
+    bipedRightLegwear -> type: crsecond.ɫ          , obf: bipedRightLegwear, offset: 220
+    bipedLeftArmwear -> type: crsecond.ɫ          , obf: bipedLeftArmwear, offset: 248
+    bipedRightArmwear -> type: crsecond.ɫ          , obf: bipedRightArmwear, offset: 244
+    bipedCape    -> type: crsecond.ɫ          , obf: bipedCape, offset: 240
+  }
+
+}
+
+Block {
+  class: craftrise.Ǳ
+
+  methods: {
+    getLocalizedName()             -> returns: java.lang.String, obf: toString
+    getBlockById(int)              -> returns: craftrise.Ǳ    , obf: ѻ
+    getIdFromBlock(Ǳ)              -> returns: int            , obf: Ă
+    getStateFromMeta(int)          -> returns: craftrise.ЪѼ   , obf: ҁ
+    getMetaFromState(ЪѼ)           -> returns: int            , obf: Д
+  }
+}
+
+EntityRenderer {
+  class: craftrise.P
+
+  methods: {
+    renderWorldPass(int, float, long) -> returns: void           , obf: ϟ
+  }
+}
+
+C05PacketPlayerLook {
+  class: craftrise.Ъʫ$Ω
+
+}
+
+AxisAlignedBB {
+  class: craftrise.Uϥ
+
+  fields: {
+    maxX         -> type: double              , obf: Ό, offset: 48
+    maxZ         -> type: double              , obf: ǰ, offset: 40
+    maxY         -> type: double              , obf: š, offset: 24
+    minX         -> type: double              , obf: ҡ, offset: 16
+    minZ         -> type: double              , obf: P, offset: 56
+    minY         -> type: double              , obf: ɘ, offset: 32
+  }
+
+}
+
+CRGameInfo {
+  class: crsecond.ժ
+
+}
+
+NetworkPlayerInfo {
+  class: craftrise.Uӹ
+
+  fields: {
+    gameProfile  -> type: crsecond.P          , obf: Ђ, offset: 140
+    locationSkin -> type: crsecond.җ          , obf: ϴ, offset: 136
+    responseTime -> type: int                 , obf: Ү, offset: 40
+    locationCape -> type: crsecond.җ          , obf: ԙ, offset: 132
+    displayName  -> type: crsecond.Ҋ          , obf: Ȕ, offset: 120
+  }
+
+  methods: {
+    setDisplayName(Ҋ)              -> returns: void           , obf: Ί
+    getResponseTime()              -> returns: int            , obf: Ժ
+    getGameProfile()               -> returns: crsecond.P     , obf: и
+  }
+}
+
+TimerContainer {
+  class: crsecond.Ё
+
+  methods: {
+    getValue(double)               -> returns: void           , obf: ɋ
+  }
+}
+
+TileEntityBase {
+  class: craftrise.Ъn
+
+}
+
+ItemRenderer {
+  class: craftrise.Uʰ
+
+  fields: {
+    prevEquippedProgress -> type: float               , obf: ɂ, offset: 12
+    itemToRender -> type: craftrise.Uӡ        , obf: Ĩ, offset: 52
+    equippedProgress -> type: float               , obf: ϋ, offset: 24
+  }
+
+  methods: {
+    doBlockTransform()             -> returns: void           , obf: ͼ
+    renderItemInFirstPerson(float) -> returns: void           , obf: Ƨ
+    armTransform(É, float, float)  -> returns: void           , obf: Þ
+    swingBob(float)                -> returns: void           , obf: Œ
+    hurtAnim(Օ, float)             -> returns: void           , obf: ʄ
+    lighting(É)                    -> returns: void           , obf: Ԋ
+    renderItem(Č, Uӡ, ļ)           -> returns: void           , obf: N
+    cameraRotate(float, float)     -> returns: void           , obf: ϩ
+  }
+}
+
+C10PacketCreativeInventoryAction {
+  class: craftrise.Uϓ
+
+}
+
+GameSettings {
+  class: craftrise.ѹ
+
+}
+
+EntityItem {
+  class: craftrise.ɱ
+
+}
+
+S18PacketEntityTeleport {
+  class: craftrise.Ъւ
+
+}
+
+C01PacketChatMessage {
+  class: craftrise.Ъђ
+
+  fields: {
+    message      -> type: java.lang.String    , obf: Ԥ, offset: 20
+  }
+
+  methods: {
+    getMessage()                   -> returns: java.lang.String, obf: ϥ
+  }
+}
+
+BlockRendererDispatcher {
+  class: craftrise.Ƒ
+
+  methods: {
+    getBlockModelRenderer()        -> returns: craftrise.Uʖ   , obf: Ӻ
+  }
+}
+
+IInventory {
+  class: craftrise.Ⱥ
+
+}
+
+Vec3i {
+  class: craftrise.ЪΏ
+
+  methods: {
+    getY()                         -> returns: int            , obf: Ӱ
+    getX()                         -> returns: int            , obf: ȁ
+    getZ()                         -> returns: int            , obf: ł
+  }
+}
+
+TextureOffset {
+  class: crsecond.Ù
+
+}
+
+ModelBase {
+  class: craftrise.ЪÒ
+
+  methods: {
+    setTextureOffset(String, int, int) -> returns: void           , obf: ȇ
+    setModelAttributes(ЪÒ)         -> returns: void           , obf: Ń
+    getTextureOffset(String)       -> returns: crsecond.Ù     , obf: Ê
+    setLivingAnimations(Č, float, float, float) -> returns: void           , obf: Š
+    setRotationAngles(...)         -> returns: void           , obf: ȝ
+    copyModelAngles(ɫ, ɫ)          -> returns: void           , obf: Վ
+    render(...)                    -> returns: void           , obf: ȓ
+  }
+}
+
+BlockModelShapes {
+  class: craftrise.Uǖ
+
+}
+
+KeyBinding {
+  class: craftrise.UͶ
+
+  fields: {
+    pressed      -> type: boolean             , obf: ǯ, offset: 64
+    keyCodeDefault -> type: int                 , obf: Ʉ, offset: 60
+    keyCode      -> type: int                 , obf: Ҩ, offset: 32
+  }
+
+  methods: {
+    onTick(int)                    -> returns: void           , obf: ԑ
+    setKeyBindState(կ, int, boolean) -> returns: void           , obf: æ
+  }
+}
+
+Timer {
+  class: crsecond.Ȥɪ
+
+}
+
+GuiScreen {
+  class: craftrise.ϔ
+
+}
+
+C02PacketUseEntityAction {
+  class: craftrise.UÂ$ї
+
+}
+
+FontRenderer {
+  class: craftrise.Ƞ
+
+  methods: {
+    drawString(String, float, float, int, boolean) -> returns: int            , obf: ն
+    getStringWidth(String)         -> returns: int            , obf: Ռ
+  }
+}
+
+EntityPlayerSP {
+  class: craftrise.Օ
+
+  fields: {
+    sendQueue    -> type: craftrise.ЪЧ        , obf: Ϣ, offset: 1048
+  }
+
+  methods: {
+    setSprinting(boolean)          -> returns: void           , obf: ŭ
+    swingItem()                    -> returns: void           , obf: ë
+    joinEntityItemWithWorld(ɱ)     -> returns: void           , obf: ÿ
+    isCurrentViewEntity()          -> returns: boolean        , obf: ĉ
+    addChatMessage(Ҋ)              -> returns: void           , obf: Г
+  }
+}
+

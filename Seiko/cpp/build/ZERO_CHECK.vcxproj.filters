@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Bora\Desktop\Pewa\cpp\build\CMakeFiles\037e355ca22f78e90994312f574c8386\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7E2F7999-1383-3203-B993-99830868945C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

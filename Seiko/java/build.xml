@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Pewa" default="build" basedir=".">
+    
+    <property name="src.dir" value="src"/>
+    <property name="bin.dir" value="bin"/>
+    <property name="jar.file" value="${bin.dir}/pewa.jar"/>
+    <property name="output.dir" value="C:/pewa"/>
+    
+    <target name="clean">
+        <delete dir="${bin.dir}"/>
+    </target>
+    
+    <target name="compile">
+        <mkdir dir="${bin.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${bin.dir}" includeantruntime="false" source="1.8" target="1.8">
+            <compilerarg value="-encoding"/>
+            <compilerarg value="UTF-8"/>
+        </javac>
+    </target>
+    
+    <target name="jar" depends="compile">
+        <jar destfile="${jar.file}" basedir="${bin.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="me.pewa.Main"/>
+            </manifest>
+        </jar>
+        <echo message="[+] JAR created: ${jar.file}"/>
+    </target>
+    
+    <target name="copy" depends="jar">
+        <mkdir dir="${output.dir}"/>
+        <copy file="${jar.file}" todir="${output.dir}" overwrite="true"/>
+        <echo message="[+] JAR copied to: ${output.dir}/pewa.jar"/>
+    </target>
+    
+    <target name="build" depends="copy">
+        <echo message="[+] Build completed successfully"/>
+        <echo message="[+] Output: ${output.dir}/pewa.jar"/>
+    </target>
+    
+</project>
+    
