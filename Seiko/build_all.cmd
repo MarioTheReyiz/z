@@ -6,7 +6,7 @@ set "ROOT=%~dp0"
 set "ROOT=%ROOT:~0,-1%"
 set "OUT_DIR=C:\pewa"
 
-set "JAVA_HOME=C:\Users\Wachen\AppData\Local\Programs\Eclipse Adoptium\jdk-25.0.2.10-hotspot"
+set "JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-21.0.8.9-hotspot"
 set "PATH=%JAVA_HOME%\bin;%PATH%"
 set "MAVEN=%ROOT%\apache-maven-3.8.6\bin\mvn.cmd"
 
