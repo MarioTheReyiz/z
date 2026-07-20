@@ -52,7 +52,7 @@ public final class IngameHud {
 
     // ── BlurText brand animation ──────────────────────────────────────────────
     // Two texts cycle: TEXTS[0] → TEXTS[1] → TEXTS[0] → ...
-    private static final String[] TEXTS        = { "Seiko", "Evanescia" };
+    private static final String[] TEXTS        = { "Enes", "ARXVS   " };
     // How long each text is fully visible (ms)
     private static final long     HOLD_MS      = 2500L;
     // How long the full out+in transition takes (ms)
